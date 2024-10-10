@@ -1,0 +1,6 @@
+bcrypt~=4.2.0
+PyJWT~=2.9.0
+fastapi~=0.115.0
+SQLAlchemy~=2.0.35
+pydantic~=2.9.2
+uvicorn~=0.31.0
