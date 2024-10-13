@@ -1,9 +1,11 @@
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 
-class CreateUser(BaseModel):
+class UserIn(BaseModel):
     email: EmailStr = Field(
-        title="User’s email, must be unique", examples=["john@domain.com"], max_length=64
+        title="User’s email, must be unique",
+        examples=["john@domain.com"],
+        max_length=64
     )
 
     username: str = Field(title="Username (not unique)", max_length=32)
